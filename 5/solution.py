@@ -20,7 +20,6 @@ def move_2(amount, _from, to):
     elements = []
     for _ in range(amount):
         elements.append(STACKS[_from].pop())
-    print(elements)
     for i in range(len(elements)-1, -1, -1):
         STACKS[to].append(elements[i])
 
